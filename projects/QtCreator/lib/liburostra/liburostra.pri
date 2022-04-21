@@ -23,7 +23,7 @@
 
 ########################################################################
 # liburostra
-XOS_LIB_UROSTRA_VERSION_BUILD_DATE = $$system(~/bin/utility/tdate)
+XOS_LIB_UROSTRA_VERSION_BUILD_DATE = 1/25/2022 #$$system(~/bin/utility/tdate)
 
 # liburostra TARGET
 #
