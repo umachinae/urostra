@@ -16,7 +16,7 @@
 #   File: urostra.pro
 #
 # Author: $author$
-#   Date: 1/26/2022
+#   Date: 3/28/2022
 #
 # os specific QtCreator project .pro file for framework urostra executable urostra
 ########################################################################

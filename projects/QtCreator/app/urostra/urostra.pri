@@ -16,7 +16,7 @@
 #   File: urostra.pri
 #
 # Author: $author$
-#   Date: 1/26/2022
+#   Date: 3/28/2022, 5/8/2022
 #
 # generic QtCreator project .pri file for framework urostra executable urostra
 ########################################################################
@@ -55,12 +55,14 @@ XOS_CONSOLE_MAIN_MAIN \
 # urostra_exe HEADERS
 #
 urostra_exe_HEADERS += \
-$${UROSTRA_SRC}/xos/app/console/urostra/main.hpp \
+$${UROSTRA_SRC}/xos/app/console/urostra/version/main_opt.hpp \
+$${UROSTRA_SRC}/xos/app/console/urostra/version/main.hpp \
 
 # urostra_exe SOURCES
 #
 urostra_exe_SOURCES += \
-$${UROSTRA_SRC}/xos/app/console/urostra/main.cpp \
+$${UROSTRA_SRC}/xos/app/console/urostra/version/main_opt.cpp \
+$${UROSTRA_SRC}/xos/app/console/urostra/version/main.cpp \
 
 ########################################################################
 # urostra_exe FRAMEWORKS

@@ -16,10 +16,12 @@
 #   File: urostra.pri
 #
 # Author: $author$
-#   Date: 1/26/2022
+#   Date: 3/28/2022
 #
 # build specific QtCreator project .pri file for framework urostra
 ########################################################################
+# Repository Depends: vmachinae
+# Depends: unadir;ufila;ucrono
 
 contains(BUILD_OS,Uname) {
 UNAME = $$system(uname)
@@ -47,25 +49,103 @@ BUILD_OS = os
 #BUILD_CPP_VERSION = 11
 
 ########################################################################
+# unadir
+#
+# pkg-config --cflags --libs unadir
+#
+
+# build unadir INCLUDEPATH
+#
+build_unadir_INCLUDEPATH += \
+
+# build unadir DEFINES
+#
+build_unadir_DEFINES += \
+
+# build unadir FRAMEWORKS
+#
+build_unadir_FRAMEWORKS += \
+
+# build unadir LIBS
+#
+build_unadir_LIBS += \
+
+########################################################################
+# ufila
+#
+# pkg-config --cflags --libs ufila
+#
+
+# build ufila INCLUDEPATH
+#
+build_ufila_INCLUDEPATH += \
+
+# build ufila DEFINES
+#
+build_ufila_DEFINES += \
+
+# build ufila FRAMEWORKS
+#
+build_ufila_FRAMEWORKS += \
+
+# build ufila LIBS
+#
+build_ufila_LIBS += \
+
+########################################################################
+# ucrono
+#
+# pkg-config --cflags --libs ucrono
+#
+
+# build ucrono INCLUDEPATH
+#
+build_ucrono_INCLUDEPATH += \
+
+# build ucrono DEFINES
+#
+build_ucrono_DEFINES += \
+
+# build ucrono FRAMEWORKS
+#
+build_ucrono_FRAMEWORKS += \
+
+# build ucrono LIBS
+#
+build_ucrono_LIBS += \
+
+########################################################################
 # urostra
 
 # build urostra INCLUDEPATH
 #
 build_urostra_INCLUDEPATH += \
+$${build_ucrono_INCLUDEPATH} \
+$${build_ufila_INCLUDEPATH} \
+$${build_unadir_INCLUDEPATH} \
 
 
 # build urostra DEFINES
 #
 build_urostra_DEFINES += \
+$${build_unadir_DEFINES} \
+$${build_ufila_DEFINES} \
+$${build_ucrono_DEFINES} \
 
 
 # build urostra FRAMEWORKS
 #
 build_urostra_FRAMEWORKS += \
+$${build_ucrono_FRAMEWORKS} \
+$${build_ufila_FRAMEWORKS} \
+$${build_unadir_FRAMEWORKS} \
 
 
 # build urostra LIBS
 #
 build_urostra_LIBS += \
+$${build_ucrono_LIBS} \
+$${build_ufila_LIBS} \
+$${build_unadir_LIBS} \
 
 ########################################################################

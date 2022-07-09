@@ -16,14 +16,14 @@
 #   File: liburostra.pri
 #
 # Author: $author$
-#   Date: 1/25/2022
+#   Date: 3/28/2022, 5/8/2022
 #
 # generic QtCreator project .pri file for framework urostra static library liburostra
 ########################################################################
 
 ########################################################################
 # liburostra
-XOS_LIB_UROSTRA_VERSION_BUILD_DATE = 1/25/2022 #$$system(~/bin/utility/tdate)
+XOS_LIB_UROSTRA_VERSION_BUILD_DATE = 5/8/2022 #$$system(~/bin/utility/tdate)
 
 # liburostra TARGET
 #
@@ -66,4 +66,3 @@ liburostra_SOURCES += \
 $${UROSTRA_SRC}/xos/lib/urostra/version.cpp \
 
 ########################################################################
-
